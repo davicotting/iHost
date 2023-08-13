@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'spotify';
+    src: url('fonts/AvenirLTStd-Black.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: white;
+    font-family: 'spotify';
+    background-color: black;
+}
+header{
+    height: 84px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121214;
+ 
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
+
+.logo-nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.nav-list{
+    padding: 20px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.antiga-main{
+    background-image: url('assets/to-the-stars-animate.svg');
+    background-color: #232326;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+   background-position: center center;
+}
+.main{
+    width: 100%;
+}
+.espaco-lorem{
+    height: 376px;
+    width: 100%;
+    background-color: #121214;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bloco-lorem{
+    height: 200px;
+    width: 400px;
+    background-color: #202024;
+    border-radius: 15px;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.imagem > img{
+    width: 50px;
+    height: 50px;
+}
+.bloco-lorem{
+    text-align: center;
+    font-size: 9px;
+    padding: 15px;
+}
+.espaco-planos{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #202024;
+    height: 500px;
+    align-items: center;
+}
+.bloco-planos{
+    height: 350px;
+    width: 250px;
+    background-color: #29292E;
+    border-radius: 15px;
+}
+.plano{
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0A5573;
+    border-radius: 15px 15px 0px 0px;
+}
+button{
+    font-family: 'spotify';
+    color: white;
+}
+input{
+    font-family: 'spotify';
+    color: white;
+}
+textarea{
+    font-family: 'spotify';
+    color: white;
+}
+.especificar{
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-size: 17px;
+}
+.saiba-mais{
+    background-color: #0A5573;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 120px;
+    border: #0A5573;
+    cursor: pointer;
+}
+.dominios-space{
+    height: 600px;
+    width: 100%;
+    background-color: #29292E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dominios-space > h1{
+    font-size: 2.4rem;
+}
+.input-dominio{
+    margin-top: 50px;
+    padding:10px;
+    height: 40px;
+    width: 500px;
+    background-color: rgb(67, 67, 67);
+    border-radius: 15px;
+    border: rgb(67, 67, 67);
+    color: white;
+}
+.procurar-dominio{
+    width: 150px;
+    height: 60px;
+    background-color: #0A5573;
+    border-radius: 10px;
+    border: #0A5573;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.busca-dominio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-area{
+    height: 700px;
+    width: 100%;
+    background-color: #323238;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.form-area > h1{
+    font-size: 50px;
+}
+.form-area > p{
+    padding: 10px;
+    font-size: 25px;
+}
+.englobadiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.inputname{
+
+    height: 40px;
+    width: 300px;
+    background-color: rgb(67, 67, 67);
+    border: rgb(67, 67, 67);
+    border-radius: 15px;
+    padding: 10px;
+
+
+}
+#textarea{
+    height: 200px;
+    width: 620px;
+    resize: none;
+    border-radius: 10px;
+    background-color: rgb(67, 67, 67);
+    border: rgb(67, 67, 67);
+    padding: 10px;
+}
+.textarea-place{
+    padding: 20px;
+    
+}
+.input-nome{
+    padding: 10px;
+}
+.input-email{
+    padding: 10px;
+}
+.submit{
+    background-color: #0A5573;
+    border: #0A5573;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #202024;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    header{
+        flex-direction: column;
+        height: 180px;
+    }
+    .ihost{
+        display: none;
+    }
+    
+
+    .espaco-lorem{
+        height: 1000px;
+        flex-direction: column;
+        transition: 2s;
+    }
+    .bloco-lorem{
+        padding: 39px;
+        width: 70%;
+    }
+    .x{
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+
+    }
+    .espaco-planos{
+        height: 1600px;
+        flex-direction: column;
+        transition: 2s;
+    }
+    .dominios-space > h1{
+        font-size: 15px;
+    }
+    .dominios-space{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-dominio{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    #textarea{
+        width: 90%;
+        text-align: center;
+    }
+    .inputname{
+        width: 99%;
+    }
+    .englobadiv{
+        flex-direction: column;
+    }
+    .form-area > h1{
+        font-size: 20px;
+    }
+    .form-area > p{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
+
+
